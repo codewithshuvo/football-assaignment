@@ -1,0 +1,100 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    margin: 0; 
+}
+/* ------------------
+This is The Heading part in this project
+------------------ */
+
+
+.head-part{
+    display: flex;
+    background-color: #2D25A0;
+    width: 1440px;
+    height: 677px; 
+}
+.content{
+    padding-top: 207px ;
+    padding-left: 156px;
+    padding-bottom: 240px;
+}
+.heading-text{
+    color: #FFFFFF;
+    font-size: 64px;
+    
+}
+.image-part img{
+    width: 556.01px;
+    height: 438px;
+    padding-top: 153px;
+    padding-bottom: 86px;
+    padding-right: 140.99px;
+}
+button{
+    background-color: #E02C6D;
+    width: 168px;
+    height: 44px;
+   border: none;
+   color: #FFFFFF;
+    
+}
+button i{
+    padding-left: 12px;
+    height: 16px;
+    width: 14px;
+}
+/* -----------------
+This is the main part Style 
+------------------ */
+main{
+    background-color: #FFFFFF;
+    padding-top: 70px;
+}
+.player-part{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    padding-left: 160px; 
+    padding-right: 210px; 
+
+  
+}
+.sub-part-player{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    margin: 20px;
+    text-align: right;
+}
+.player-informayion{
+    text-align: justify;
+}
+.player-photo img{
+    width: 300px;
+    height: 256px;
+    /* padding-left:20px;
+    padding-right:20px;
+   margin: 0,auto; */
+
+}
+h2{
+    font-size: 28px;
+}
+/* -----------------
+This is The footer part in this project 
+------------------------------- */
+.icon .background-color{
+    
+    justify-content: center;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0px 8px;
+   
+    /* padding-top: 20px; */
+
+}
+footer{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+}
