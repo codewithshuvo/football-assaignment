@@ -7,12 +7,20 @@ body{
 This is The Heading part in this project
 ------------------ */
 
-
+/* This is Animation Transation part  */
 .head-part{
-    display: flex;
+    display: grid; 
+    grid-template-columns: repeat(2,1fr);
     background-color: #2D25A0;
     width: 1440px;
     height: 677px; 
+    transition: 5s linear 3s;
+
+}
+/* This is Animation Transation part  */
+.head-part:hover{
+    background-color: yellowgreen;
+    
 }
 .content{
     padding-top: 207px ;
@@ -31,13 +39,20 @@ This is The Heading part in this project
     padding-bottom: 86px;
     padding-right: 140.99px;
 }
+/* This is Animation Transation part  */
 button{
     background-color: #E02C6D;
     width: 168px;
     height: 44px;
    border: none;
    color: #FFFFFF;
+   transition: width 10s;
     
+}
+/* This is Animation Transation part  */
+button:hover{
+    background-image: linear-gradient(orange,tomato);
+    width: 200px;
 }
 button i{
     padding-left: 12px;
@@ -71,9 +86,7 @@ main{
 .player-photo img{
     width: 300px;
     height: 256px;
-    /* padding-left:20px;
-    padding-right:20px;
-   margin: 0,auto; */
+   
 
 }
 h2{
@@ -89,7 +102,6 @@ This is The footer part in this project
     border-radius: 50%;
     margin: 0px 8px;
    
-    /* padding-top: 20px; */
 
 }
 footer{
@@ -98,3 +110,58 @@ footer{
     text-align: center;
     padding-top: 100px;
 }
+/*----------------------
+ Media Quaries part and Responsive section 
+---------------------- */
+
+/* Mobile Devices  */
+@media only screen and (max-width:688px){
+
+.heading-text{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    text-align: justify;
+    
+}
+
+.head-part{
+    background-color: indigo;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+   
+    
+}
+.player-part{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding: 10%;
+
+}
+main{
+    width: 100%;
+}
+footer{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+}
+/* Tablet Devices  */
+@media only screen and (max-width: 688px) and (min-width: 992px)  {
+
+    .head-part{
+        background-color: green;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player-part{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        padding: 10%;
+    }
+} 
